@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org";>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>商城管理系统</title>
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}">
+</head>
+<body class="layui-layout-body">
+    <!--引入头部模块-->
+    <div th:replace="admin/common::head"></div>
+    <!--引入左侧模块-->
+    <div th:replace="admin/common::left"></div>
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <div style="padding: 15px;">内容主体区域</div>
+    </div>
+    <!--引入底部模块-->
+    <div th:replace="admin/common::foot"></div>
+</div>
+<script th:src="@{/layui/layui.js}"></script>
+<script th:src="@{/js/common.js}"></script>
+</body>
+</html>
